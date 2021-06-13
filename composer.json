@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Kparse\\": ""
+        }
+    },
+    "require": {
+        "jaybizzle/crawler-detect": "^1.2"
+    }
+}
