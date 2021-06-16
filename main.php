@@ -1,11 +1,10 @@
 <?php
 
-namespace Kparse;
-
 include_once realpath("vendor/autoload.php");
 
 
 $log = file_get_contents('log.txt');
-$parser = new src\Parser;
-$result = json_encode($parser->parse($log));
+$parser = new Kovparse\Parser;
+$parser->parseLog($log);
+$result = $parser->getJson();
 print_r($result);
